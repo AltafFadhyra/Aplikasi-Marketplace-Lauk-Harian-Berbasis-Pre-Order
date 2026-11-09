@@ -16,7 +16,20 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
+            $table->string('phone', 20)->unique();
             $table->string('password');
+
+            // Peran pengguna: pembeli, penjual, kurir, admin
+            $table->enum('role', ['pembeli', 'penjual', 'kurir', 'admin'])->default('pembeli')->index();
+            $table->timestamp('phone_verified_at')->nullable();
+
+            // Alamat utama pembeli
+            $table->string('address')->nullable();
+            $table->string('patokan', 120)->nullable();
+            $table->decimal('latitude', 10, 7)->nullable();
+            $table->decimal('longitude', 10, 7)->nullable();
+            $table->string('avatar')->nullable();
+
             $table->rememberToken();
             $table->timestamps();
         });

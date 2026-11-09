@@ -1,0 +1,4 @@
+MENU=36|BANNER=4|AVATAR=10
+menu-0.jpg,menu-1.jpg,menu-2.jpg,menu-3.jpg,menu-4.jpg,menu-5.jpg,menu-6.jpg,menu-7.jpg,menu-8.jpg,menu-9.jpg,menu-10.jpg,menu-11.jpg,menu-12.jpg,menu-13.jpg,menu-14.jpg,menu-15.jpg,menu-16.jpg,menu-17.jpg,menu-18.jpg,menu-19.jpg,menu-20.jpg,menu-21.jpg,menu-22.jpg,menu-23.jpg,menu-24.jpg,menu-25.jpg,menu-26.jpg,menu-12.jpg,menu-28.jpg,menu-29.jpg,menu-4.jpg,menu-31.jpg,menu-32.jpg,menu-33.jpg,menu-34.jpg,menu-35.jpg
+banner-0.jpg,banner-1.jpg,banner-2.jpg,banner-3.jpg
+avatar-0.jpg,avatar-1.jpg,avatar-2.jpg,avatar-3.jpg,avatar-4.jpg,avatar-5.jpg,avatar-6.jpg,avatar-7.jpg,avatar-8.jpg,avatar-9.jpg
