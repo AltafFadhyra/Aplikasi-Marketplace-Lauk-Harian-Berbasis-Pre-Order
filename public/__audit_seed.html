@@ -1,0 +1,11 @@
+<!doctype html>
+<html><head><meta charset="utf-8"></head><body><script>
+(async () => {
+  const res = await fetch('/seller/pesanan', { credentials: 'same-origin' });
+  const text = await res.text();
+  const doc = new DOMParser().parseFromString(text, 'text/html');
+  const page = JSON.parse(doc.querySelector('script[data-page="app"]').textContent);
+  localStorage.setItem('preorderly.sesi.v1', JSON.stringify(page.props.demo.akun.penjual));
+  location.replace('/seller/pesanan');
+})().catch(e => { document.body.textContent = 'ERR ' + e; });
+</script></body></html>
